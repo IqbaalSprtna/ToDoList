@@ -101,10 +101,19 @@ const Register = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+          className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
         >
           Register
         </button>
+        <div className="mt-4 text-center">
+          <p className="text-gray-600 mb-2">Have an account?</p>
+          <button
+            onClick={() => router.push("/auth/login")}
+            className="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300"
+          >
+            Login
+          </button>
+        </div>
       </form>
     </div>
   );
